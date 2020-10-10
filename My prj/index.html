@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio Ahmed Babayo</title>
+		<meta http-equiv="X-UA-Compatible" content="Ie-edge">
+		<link rel="stylesheet" href="css/user-style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="shortcut icon" type="text/css" href="./images/cut.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="Ie-edge">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-inner">
+			<nav id="header">
+				<ul class="nav">
+					<li class="splash">
+						<a href="#information">
+							<div class="profile-info">
+								<div class="profile-name">AHMED BABYO</div>
+							</div>
+						</a>
+					</li>
+					<li class="profile"><a href="#profile" data-toggle="tooltip" data-placement="top" title="click to view about me"><span class="icon fa fa-lg fa-address-book"></span></a></li>
+					<li class="portfolio"><a href="#portfolio" data-toggle="tooltip" data-placement="top" title="click to see my portfolio"><span class="icon fa fa-wrench"></span></a></li>
+					<li class="contact"><a href="#contact" data-toggle="tooltip" data-placement="top" title="click to view my Tweets"><span class="icon fa fa-twitter"></span></a></li>
+				</ul>
+				<div class="clear"></div>
+			</nav>
+
+			<section class="information" id="information">
+				<div class="info">
+					<div class="phone-icon">
+						<img src="images/passport.jpg" width="82" height="83" style="border-radius: 30px;"/>
+					</div>
+					<div class="call">08036581304</div>
+					<div class="reach-me">ahmedakuyam@gmail.com</div>
+					<div class="reach-me">akuyam78.github.io</div>
+				</div>
+
+				<div class="social">
+					<ul class="nav">
+						<li class="social-icon">
+							<a class="social-1" href="https://www.facebook.com/ahmedakuyam" target="_blank">
+								<img src="images/facebook.png" data-toggle="tooltip" data-placement="top" title="click to find me on facebook">
+								<span class="overlay">
+									<h6>find me on</h6>								
+								</span>
+							</a>
+						</li>
+
+						<li class="social-icon">
+							<a class="social-2" href="https://www.instagram.com/ahmed_babayo_/?hl=en" target="_blank">
+								<span class="icon"></span>
+									<img src="images/instagram.png" data-toggle="tooltip" data-placement="right" title="click to find me on instagram">
+									<span class="overlay">
+										<h6>find me on</h6>								
+								</span>
+							</a>
+						</li>
+
+						<li class="social-icon">
+							<a class="social-3" href="https://www.twitter.com/ahmedakuyam?s=03" target="_blank">
+								<span class="icon"></span>
+									<img src="images/twitter.png" data-toggle="tooltip" data-placement="left" title="click to find me on twitter">
+									<span class="overlay">
+										<h6>find me on</h6>								
+								</span>
+							</a>
+						</li>
+
+						<li class="social-icon">
+							<a class="social-4" href="https://www.linkedin.com/in/ahmed-babayo-495830b8?trk=people-guest_people_search-card/" target="_blank">
+								<span class="icon"></span>
+									<img src="images/linkedin.png" data-toggle="tooltip" data-placement="bottom" title="click to find me on linkedin">
+									<span class="overlay">
+										<h6>find me on</h6>								
+								</span>
+							</a>
+						</li>
+					
+					</ul>
+
+				</div>
+
+				<div class="clear"></div>
+			</section>
+		
+		<!-- <section id="profile"> -->
+			<section id="profile">
+				<div class="profile-header">
+					<ul id="profile-filters">
+							<li><a href="#" onclick="document.getElementById('aboutMe').style.display='block'" class="w3-button w3-cyan">About Me</a></li>					
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</section>
+
+			<!-- css modal for about me -->
+			<div id="aboutMe" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+			  	<header class="w3-container w3-black"> 
+			   		<span onclick="document.getElementById('aboutMe').style.display='none'" 
+			   			class="w3-button w3-white w3-large w3-display-topright">&times;
+			   		</span>
+			   			<h2>About</h2>
+			  	</header>
+
+	                <div class="w3-bar w3-border-bottom">
+					   <button class="tablink w3-bar-item w3-button" onclick="ShowAboutMe(event, 'intro')">intro</button>
+					   <button class="tablink w3-bar-item w3-button" onclick="ShowAboutMe(event, 'education')">education</button>
+					   <button class="tablink w3-bar-item w3-button" onclick="ShowAboutMe(event, 'experience')">experience</button>
+					   <button class="tablink w3-bar-item w3-button" onclick="ShowAboutMe(event, 'skills')">skills</button>
+					</div>
+
+					<div id="intro" class="w3-container about">
+					   <h1>Intro</h1>
+					   <p>
+						   <strong>I am a <em>GIS analyst</em> with interest in web development</strong>
+						</p>
+					</div>
+					<div id="education" class="w3-container about">
+					   <h1>Education</h1>
+						<div>
+						  	<strong>MAUTECH Yola, Yola Nigeria</strong> <br>
+							<em>MTech. Surveying and Geoinformatics</em>
+						</div>
+						<div><strong>Bayero University Kano, Kano Nigeria</strong> <br>
+							<em>Masters in GIS</em>
+						</div>
+						<div><strong>ATBU Bauchi, Bauchi Nigeria</strong> <br> 
+							<em>BTech. Surveying and Geoinformatics</em>
+						</div>
+					</div>
+
+					<div id="experience" class="w3-container about">
+					   <h1>Experience</h1>
+   							<p><b>GIS Analyst</b>A2Z Geospatech Ltd Bauchi, Nigeria<br> | 
+								<em> Geospatial data collections using ground survey snd remote sensing methods Geodata processing Digital Cartographic visualization Geospatial data analysis</em>
+							<br>
+					</div>
+
+					<div id="skills" class="w3-container about">
+						<h1>skills</h1>
+						<strong>HTML</strong> / 99% |
+						<strong>CSS</strong> / 90% | 
+						<strong>JavaScript</strong> / 50% | 
+						<strong>GNSS INS Integration</strong> / 80%				
+					</div>
+
+					  <div class="w3-container w3-light-grey w3-padding">
+					   <button class="w3-button w3-right w3-white w3-border" 
+					   onclick="document.getElementById('aboutMe').style.display='none'">Close</button>
+					  </div>
+					 </div>
+					</div>
+
+
+			<section id="portfolio">
+				<div class="portfolio-header">
+					<ul id="portfolio-filters">
+						<li><a href="*" class="current">All</a></li>
+						
+						
+					</ul>
+				</div>
+				<div class="portfolio-details">
+					
+									
+					<article class="portfolio-post web">
+						<a href="https://www.github.com/akuyam78" target="_blank" class="btn btn-success">
+							<img class="post-image" src="images/github.jpg" />
+							<span class="overlay">
+								<h4>MY GITHUB REPO</h4>
+
+							</span>
+						</a>
+					</article>
+					
+
+					
+					<div class="clear"></div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="map">
+					<a class="twitter-timeline" data-theme="dark" data-height="400" href="https://twitter.com/ahmedakuyam?s=03"><font color=#292929>Tweets by OkpisaJnr</font></a> 
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	            </div>
+				<div class="clear"></div>
+			</section>
+
+
+		<a href="#" id="toTop" onclick="scrollToTop()"></a>
+	</div>
+			<div id="dark" class="dark_md">
+		        <a href="#"><img class="btn btn-info" src="./images/bulb.gif" width="32" id="bulb" alt="" data-toggle="tooltip" data-placement="top" title="click to switch to dark/light mode"></a>
+		        <p id="mode2"></p>
+		     
+		    </div>
+
+            <div class="aside-box">
+        		<div class="dark-box">
+            		<div class="dark-container dark_md "id="dark">
+                		<img src="images/sun.svg" alt="">
+                				<label class="switchBtn">
+                    				<input type="checkbox" class="show hide">
+                    						<span class="switch round"></span> <br>
+                				</label>
+                		<img src="images/moon.svg" alt="">
+            		</div>
+            				<p id="mode" class="bold_text">Light Mode</p>
+       			</div>
+
+        	</div>
+		<script type="text/javascript">
+     //back to the top
+
+     var timeOut;
+    function scrollToTop() {
+        if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+            window.scrollBy(0,-50);
+            timeOut=setTimeout('scrollToTop()',10);
+        }
+        else clearTimeout(timeOut);
+    }
+    //back to the top end here
+
+
+
+ const darkBtn = document.querySelector(".switch");
+//for larger screen
+        darkBtn.addEventListener("click", ()=>{
+          var cont = document.querySelector("#information, #contact, #portfolio, #profile")
+           var cont2 = document.querySelector(".container-inner,.portfolio-header")
+           cont2.classList.toggle("darkScreen")
+         if (cont.classList.toggle("darkScreen")) {
+            document.getElementById("mode").innerHTML="Dark Mode";          
+        }else{
+            document.getElementById("mode").innerHTML= "Light Mode";
+              }
+        });
+
+//for smaller screen
+        const darkBtnSm = document.querySelector("#dark")
+        darkBtnSm.addEventListener("click", ()=>{
+          
+          var container = document.querySelector("#information, #contact,#portfolio,#profile")
+          container.classList.toggle("darkScreen"); 
+            var container2 = document.querySelector(".container-inner,.portfolio-header")   
+            container2.classList.toggle("darkScreen");         
+
+           if (document.querySelector(".show").classList.contains("hide"))
+           {
+                document.querySelector(".moon").classList.remove("hide")
+                document.querySelector(".sun").classList.add("hide")
+               
+            }
+            else if(document.querySelector(".show").classList.contains("hide"))
+            {
+                document.querySelector(".sun").classList.remove("hide")
+                document.querySelector(".moon").classList.add("hide")
+            
+             }}
+        );
+
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/customscript.js"></script>
+	</body>
+</html>
